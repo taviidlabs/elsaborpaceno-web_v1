@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Sabor Paceño — Restaurante boliviano auténtico en Santa Cruz de la Sierra." />
+  <title>El Sabor Paceño — Cocina Boliviana Auténtica</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>" />
+</head>
+<body>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVEGACIÓN
+     ══════════════════════════════════════════════════════════ -->
+<nav class="nav" id="navbar">
+  <a href="#inicio" class="nav-logo">El <em>Sabor</em> Paceño</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#reservas" class="nav-cta">Reservar</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+     ──────────────────────────────────────────────────────────
+     FOTO DE FONDO: pon tu imagen en  imagenes/hero-bg.jpg
+     Si no la pones, se ve el fondo oscuro con gradiente.
+     ══════════════════════════════════════════════════════════ -->
+<section id="inicio" class="hero">
+  <div class="hero-bg">
+    <div class="imagenes/hero-bg.jpg"></div><!-- usa imagenes/hero-bg.jpg -->
+  </div>
+  <div class="hero-patron"></div>
+  <div class="hero-contenido">
+    <p class="hero-ojo">✦ La Paz · Bolivia · Desde 2008 ✦</p>
+    <h1 class="hero-titulo">El <em>Sabor</em><br>Paceño</h1>
+    <p class="hero-sub">Sabores auténticos del altiplano boliviano<br>en cada plato, en cada sorbo, en cada memoria.</p>
+    <div class="hero-btns">
+      <a href="#menu"     class="btn btn-principal">Ver el Menú</a>
+      <a href="#reservas" class="btn btn-borde">Reservar Mesa</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-linea"></div>
+    <span>Descubrir</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     NOSOTROS
+     ──────────────────────────────────────────────────────────
+     FOTO: pon tu imagen en  imagenes/nosotros.jpg
+     Si no la pones, aparece el emoji 🫕 de respaldo.
+     ══════════════════════════════════════════════════════════ -->
+<section id="nosotros" class="nosotros">
+  <div class="nosotros-grid">
+
+    <div class="reveal">
+      <div class="foto-marco" style="position:relative;">
+        <img
+          src="imagenes/ambiente.jpg"
+          alt="Cocina de El Sabor Paceño"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+        />
+        <div class="foto-emoji" style="display:none;">🫕</div>
+
+        <div class="anios-badge">
+          <span class="badge-num">16+</span>
+          <span class="badge-txt">años de sabor</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nosotros-texto reveal d1">
+      <div class="seccion-header" style="text-align:left; margin-bottom:2rem;">
+        <span class="seccion-tag">Nuestra Historia</span>
+        <h2 class="seccion-titulo">Cocina del <em>Alma</em><br>Boliviana</h2>
+        <div class="seccion-linea" style="margin-left:0;"></div>
+      </div>
+      <p>Nacimos en 2008 del sueño de la familia Mamani: traer los sabores genuinos del altiplano paceño a la mesa de todos. Con recetas heredadas de generación en generación, cada plato cuenta una historia de tierra, tradición y amor.</p>
+      <p>Nuestros ingredientes viajan directamente desde los mercados de La Paz, Oruro y Cochabamba. El chuño, la quinua y el ají son los pilares de una cocina que no pide disculpas por ser profundamente boliviana.</p>
+      <div class="valores">
+        <div class="valor">
+          <div class="valor-icono">🌿</div>
+          <div>
+            <h4>Ingredientes Auténticos</h4>
+            <p>Productos importados directamente desde Bolivia, frescos y sin compromiso.</p>
+          </div>
+        </div>
+        <div class="valor">
+          <div class="valor-icono">👨‍🍳</div>
+          <div>
+            <h4>Recetas Ancestrales</h4>
+            <p>Técnicas culinarias transmitidas por cuatro generaciones de la familia Mamani.</p>
+          </div>
+        </div>
+        <div class="valor">
+          <div class="valor-icono">❤️</div>
+          <div>
+            <h4>Cocinado con Amor</h4>
+            <p>Cada plato preparado con el mismo cariño de una cocina de hogar boliviana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     MENÚ
+     ──────────────────────────────────────────────────────────
+     Las tarjetas se generan automáticamente desde js/datos.js
+     FOTOS: ponlas en la carpeta  imagenes/
+     El nombre de cada foto está en js/datos.js, campo "imagen"
+     ══════════════════════════════════════════════════════════ -->
+<section id="menu" class="menu-seccion">
+  <div class="seccion-header reveal">
+    <span class="seccion-tag">Nuestros Platos</span>
+    <h2 class="seccion-titulo">El <em>Menú</em> Paceño</h2>
+    <div class="seccion-linea"></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab activo" onclick="cambiarTab('entradas', this)">Entradas</button>
+    <button class="tab"        onclick="cambiarTab('fondos',   this)">Platos de Fondo</button>
+    <button class="tab"        onclick="cambiarTab('sopas',    this)">Sopas</button>
+    <button class="tab"        onclick="cambiarTab('bebidas',  this)">Bebidas</button>
+    <button class="tab"        onclick="cambiarTab('postres',  this)">Postres</button>
+  </div>
+
+  <!-- Los paneles se llenan automáticamente por app.js -->
+  <div id="panel-entradas" class="panel activo"><div class="grilla-menu"></div></div>
+  <div id="panel-fondos"   class="panel">        <div class="grilla-menu"></div></div>
+  <div id="panel-sopas"    class="panel">        <div class="grilla-menu"></div></div>
+  <div id="panel-bebidas"  class="panel">        <div class="grilla-menu"></div></div>
+  <div id="panel-postres"  class="panel">        <div class="grilla-menu"></div></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALERÍA
+     ──────────────────────────────────────────────────────────
+     Las fotos se cargan automáticamente desde js/datos.js
+     FOTOS: ponlas en la carpeta  imagenes/
+     Los nombres están en js/datos.js, dentro de GALERIA[]
+     Si falta alguna foto aparece el emoji de respaldo.
+     ══════════════════════════════════════════════════════════ -->
+<section id="galeria" class="galeria">
+  <div class="seccion-header header-oscuro reveal">
+    <span class="seccion-tag">Nuestra Cocina</span>
+    <h2 class="seccion-titulo">Galería de <em>Sabores</em></h2>
+    <div class="seccion-linea"></div>
+  </div>
+  <div class="grilla-gal" id="galeriaGrid"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACTO Y MAPA
+     ══════════════════════════════════════════════════════════ -->
+<section id="contacto" class="contacto">
+  <div class="seccion-header reveal">
+    <span class="seccion-tag">Encuéntranos</span>
+    <h2 class="seccion-titulo">Visítanos en <em>Santa Cruz</em></h2>
+    <div class="seccion-linea"></div>
+  </div>
+
+  <div class="contacto-grid">
+    <div class="info-lista reveal">
+      <div class="info-item">
+        <div class="info-icono">📍</div>
+        <div>
+          <p class="info-etiqueta">Dirección</p>
+          <div class="info-valor">Av. San Martín esq. Calle Quijarro<br>Barrio Equipetrol Norte<br>Santa Cruz de la Sierra, Bolivia</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icono">🕐</div>
+        <div>
+          <p class="info-etiqueta">Horarios</p>
+          <div class="info-valor">Lunes a Viernes: 11:00 – 22:00<br>Sábados: 10:00 – 23:00<br>Domingos: 09:00 – 20:00</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icono">📞</div>
+        <div>
+          <p class="info-etiqueta">Teléfono</p>
+          <div class="info-valor"><a href="tel:+59176256193">+591 76 256 193</a></div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icono">💬</div>
+        <div>
+          <p class="info-etiqueta">WhatsApp</p>
+          <div class="info-valor"><a href="https://wa.me/59176256193" target="_blank">+591 76 256 193</a></div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icono">✉️</div>
+        <div>
+          <p class="info-etiqueta">Email</p>
+          <div class="info-valor"><a href="mailto:hola@elsaborpaceno.bo">hola@elsaborpaceno.bo</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mapa-wrap reveal d1">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.0!2d-63.1812!3d-17.7863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7b4a2d3e9b1%3A0x8c2d4a5b6e7f8a9b!2sEquipetrol%20Norte%2C%20Santa%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses!2sbo!4v1699000000000!5m2!1ses!2sbo"
+        title="Ubicación en Google Maps"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FORMULARIO DE RESERVA
+     ══════════════════════════════════════════════════════════ -->
+<section id="reservas" class="reservas">
+  <div class="seccion-header header-oscuro reveal">
+    <span class="seccion-tag">Asegura tu Lugar</span>
+    <h2 class="seccion-titulo">Hacer una <em>Reserva</em></h2>
+    <div class="seccion-linea"></div>
+  </div>
+
+  <div class="reservas-caja reveal">
+    <form id="formReserva" onsubmit="event.preventDefault(); enviarReserva();" novalidate>
+
+      <div id="camposReserva">
+        <div class="fila-form">
+          <div class="grupo">
+            <label for="rNombre">Nombre completo *</label>
+            <input type="text" id="rNombre" placeholder="Tu nombre" />
+          </div>
+          <div class="grupo">
+            <label for="rTelefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="rTelefono" placeholder="+591 7X XXX XXX" />
+          </div>
+        </div>
+        <div class="fila-form">
+          <div class="grupo">
+            <label for="rFecha">Fecha *</label>
+            <input type="date" id="rFecha" />
+          </div>
+          <div class="grupo">
+            <label for="rHora">Hora *</label>
+            <select id="rHora">
+              <option value="">Seleccionar hora</option>
+              <option>11:00</option><option>11:30</option><option>12:00</option>
+              <option>12:30</option><option>13:00</option><option>13:30</option>
+              <option>14:00</option><option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option><option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="fila-form">
+          <div class="grupo">
+            <label for="rPersonas">Número de personas *</label>
+            <select id="rPersonas">
+              <option value="">Seleccionar</option>
+              <option>1 persona</option><option>2 personas</option><option>3 personas</option>
+              <option>4 personas</option><option>5–6 personas</option>
+              <option>7–10 personas</option><option>Más de 10</option>
+            </select>
+          </div>
+          <div class="grupo">
+            <label for="rOcasion">Ocasión especial</label>
+            <select id="rOcasion">
+              <option value="">Sin ocasión especial</option>
+              <option>Cumpleaños 🎂</option>
+              <option>Aniversario 💕</option>
+              <option>Reunión de negocios 💼</option>
+              <option>Celebración familiar 🎉</option>
+              <option>Otra</option>
+            </select>
+          </div>
+        </div>
+        <div class="grupo">
+          <label for="rNotas">Comentarios o peticiones especiales</label>
+          <textarea id="rNotas" placeholder="Alergias, decoración especial, menú especial…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-principal btn-block">Confirmar Reserva</button>
+      </div>
+
+      <div id="exitoReserva" class="exito-reserva">
+        <div class="exito-icono">✅</div>
+        <h3 class="exito-titulo">¡Reserva recibida!</h3>
+        <p class="exito-sub">Te confirmaremos por WhatsApp en breve.</p>
+        <button type="button" class="btn btn-borde" onclick="nuevaReserva()">Hacer otra reserva</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="footer-logo">El <em>Sabor</em> Paceño</a>
+      <p>Desde 2008 llevando los sabores auténticos del altiplano boliviano a cada mesa. Cocinado con tradición, servido con amor.</p>
+    </div>
+    <div>
+      <p class="footer-titulo">Navegación</p>
+      <ul class="footer-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nuestra Historia</a></li>
+        <li><a href="#menu">El Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reservas">Reservar Mesa</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-titulo">Horarios</p>
+      <ul class="footer-links">
+        <li><a>Lun–Vie: 11:00–22:00</a></li>
+        <li><a>Sábados: 10:00–23:00</a></li>
+        <li><a>Domingos: 09:00–20:00</a></li>
+        <li><a href="https://wa.me/59176256193" target="_blank">WhatsApp: +591 76 256 193</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-pie" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+    
+    <div style="display: flex; flex-direction: column; gap: 0.3rem; text-align: left;">
+      <span>© 2026 El Sabor Paceño — Santa Cruz de la Sierra, Bolivia</span>
+      <span style="font-size: 0.85rem; opacity: 0.85;">
+        Desarrollado por 
+        <a href="https://tuportafolio.com" target="_blank" style="text-decoration: none; font-weight: 600; color: inherit;">
+          &lt;/&gt; Deyvid Torrez
+        </a>
+      </span>
+    </div>
+
+    <span>Hecho con ❤️ y mucho ají</span>
+
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BOTÓN WHATSAPP FLOTANTE
+     ══════════════════════════════════════════════════════════ -->
+<a href="https://wa.me/59176256193?text=Hola!%20Vi%20su%20página%20y%20quisiera%20hacer%20una%20consulta%20😊"
+   target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg class="wa-icono" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span>Escríbenos</span>
+</a>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     LIGHTBOX — Detalle de plato
+     ══════════════════════════════════════════════════════════ -->
+<div class="lb-plato" id="lightboxPlato" onclick="cerrarPlato(event)">
+  <button class="lb-cerrar" onclick="cerrarPlato(event)">✕</button>
+  <div class="lb-cuerpo">
+    <div class="lb-foto"></div>
+    <h2 class="lb-nombre"></h2>
+    <p class="lb-desc"></p>
+    <p class="lb-precio"></p>
+    <a href="#reservas" class="btn btn-principal" onclick="cerrarPlato()">Reservar Mesa</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     LIGHTBOX — Galería de fotos (con flechas)
+     ══════════════════════════════════════════════════════════ -->
+<div class="lb-galeria" id="lightboxGaleria" onclick="cerrarGaleria(event)">
+  <button class="lb-cerrar" onclick="cerrarGaleria(event)">✕</button>
+  <button class="galb-nav galb-prev" onclick="fotoAnterior()">‹</button>
+  <button class="galb-nav galb-next" onclick="fotoSiguiente()">›</button>
+  <img class="galb-img" src="" alt="" />
+  <p class="galb-caption"></p>
+</div>
+
+
+<!-- ── TOAST ─────────────────────────────────────────────────── -->
+<div class="toast" id="toast"></div>
+
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SCRIPTS — datos primero, luego la lógica
+     ══════════════════════════════════════════════════════════ -->
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
